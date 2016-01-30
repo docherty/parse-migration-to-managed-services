@@ -16,7 +16,9 @@ I'm looking for a decent managed node.js provider. I had heard of nodejitsu and 
 - Heroku (not sure how 'managed' this is)
 - Amazon EB (ditto)
 - Google Cloud (ditto)
-- Openstack
+- Openshift
+
+Dreamfactory (on Openshift) could provide a much better way of managing the api. Nodejs scripts can be run from the endpoints.
 
 ### Push notifications
 I haven't been using this in production but we know we're going to build it in in a release coming in the next couple of months so I need a solution. I've previously looked at all the usual suspects like UrbanAirship etc. Will probably depend on the Core data solution I choose and how users are managed.
