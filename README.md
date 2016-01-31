@@ -37,4 +37,4 @@ I have been using keen.io for analytics (we need some custom stuff) and didn't u
 - Google Analytics
 
 ## Other research
-I've created a stack of my current choices on [Stack Share](http://stackshare.io/jmdocherty/parse-replacement-managed-service). I'll try to keep this up to date with what I decide to use. Helpfully, you can drill down into each category to get a list of alternatives.
+I've created a stack of my current choices on [Stack Share](http://stackshare.io/docherty/parse-replacement-managed-service). I'll try to keep the stack up to date with what I decide to use. Helpfully, you can drill down into each category to get a list of alternatives.
