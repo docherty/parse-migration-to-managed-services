@@ -11,17 +11,22 @@ For info, my use case is pretty simple. We've developed a small Cordova (Ionic) 
 - Firebase
 
 ### Cloud code
-I'm looking for a decent managed node.js provider. I had heard of nodejitsu and since their acquisition, it looks like they're pointing users to Modulus.io . I don't want to run my own node server if I can avoid it.
+I'm looking for a decent managed node.js provider. I had heard of nodejitsu and since their acquisition, it looks like they're pointing users to Modulus.io . I don't want to run my own node server if I can avoid it. This means I'm looking for Paas (Platform as a service) providers as a minimum rather than "Cloud Hosting" (like Digital Ocean).
 - modulus.io
-- Heroku (not sure how 'managed' this is)
-- Amazon EB (ditto)
-- Google Cloud (ditto)
+- Heroku
+- Amazon Elastic Beanstalk
+- Google Cloud
 - Openshift
 
-Dreamfactory (on Openshift) could provide a much better way of managing the api. Nodejs scripts can be run from the endpoints.
+#### Notes
+- Dreamfactory (on Openshift) could provide a much better way of managing the api. Node.js scripts can be run from the endpoints (I think).
+- A couple of instances of node.js (plus a load balancer) which automagically start up when they terminate should provide decent uptime for the low volumes of traffic we have.
+- Heroku seems to be "the big boy" in this space so the eco-system around it is more mature (freelance devs, plugins that work, tutorials etc).
+- Openshift is great but the marketplace has a few things that are quite out of date and the web UI is generally a little less 'polished' than Heroku.
+- Need to do more research into Amazon EB.
 
 ### Push notifications
-I haven't been using this in production but we know we're going to build it in in a release coming in the next couple of months so I need a solution. I've previously looked at all the usual suspects like UrbanAirship etc. Will probably depend on the Core data solution I choose and how users are managed.
+I haven't been using this in production but we know we're going to build it into a release coming in the next couple of months so I need a solution. I've previously looked at all the usual suspects like UrbanAirship etc. Will probably depend on the Core data solution I choose and how users are managed.
 - UrbanAirship etc.
 - Amazon SNS
 - Google Cloud
@@ -30,3 +35,6 @@ I haven't been using this in production but we know we're going to build it in i
 I have been using keen.io for analytics (we need some custom stuff) and didn't use Parse's offering. I'll probably move to Flurry for 'vanilla' analytics.
 - Flurry
 - Google Analytics
+
+## Other research
+I've created a stack of my current choices on [Stack Share](http://stackshare.io/jmdocherty/parse-replacement-managed-service). I'll try to keep this up to date with what I decide to use. Helpfully, you can drill down into each category to get a list of alternatives.
